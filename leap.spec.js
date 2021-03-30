@@ -29,11 +29,11 @@ describe('A leap year', () => {
     expect(isLeap(2000)).toBe(true);
   });
 
-  xtest('year divisible by 400 but not by 125 is still a leap year', () => {
+  test('year divisible by 400 but not by 125 is still a leap year', () => {
     expect(isLeap(2400)).toBe(true);
   });
 
-  xtest('year divisible by 200, not divisible by 400 in common year', () => {
+  test('year divisible by 200, not divisible by 400 in common year', () => {
     expect(isLeap(1800)).toBe(false);
   });
 });
